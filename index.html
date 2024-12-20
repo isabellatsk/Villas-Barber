@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia Villas Barber</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.png"/>
+</head>
+<body>
+    <header>
+        <div class="content-header">
+            <div class="isa-logo">
+                <img src="img/logotipo.png">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#fred-sobre">Sobre nós</a></li>
+                    <li><a href="#pedro-equipe">Equipe</a></li>
+                    <li><a href="#bruno-servicos">Serviços</a></li>
+                    <li><a href="#yuri-galeria">Galeria</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="isa-home">
+        <div class="isa-content">
+            <div class="isa-img isa-img-off">
+                <img src="img/img-home.png">
+            </div>
+            <div class="isa-text">
+                <h1>VENHA NOS<br>CONHECER!</h1>
+                <p>É hora de elevar seu jogo de grooming, meu irmão! Nós sabemos que um simples corte de cabelo não é suficiente quando se trata de seu visual. Por isso que nossa barbearia é mais do que apenas uma experiência de corte de cabelo: é um meio para você se sentir confiante e pronto para conquistar o mundo.</p>
+                <button onclick="abrirForm()">Agende seu horário</button>
+            </div>
+            <div class="isa-form isa-off">
+                <div class="isa-exit" onclick="fecharForm()">
+                    <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24'  viewBox='0 0 24 24'><title>Voltar</title><g id="close_fill" fill='none' fill-rule='evenodd'><path d='M24 0v24H0V0zM12.593 23.258l-.011.002-.071.035-.02.004-.014-.004-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01-.017.428.005.02.01.013.104.074.015.004.012-.004.104-.074.012-.016.004-.017-.017-.427c-.002-.01-.009-.017-.017-.018m.265-.113-.013.002-.185.093-.01.01-.003.011.018.43.005.012.008.007.201.093c.012.004.023 0 .029-.008l.004-.014-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006l-.006.014-.034.614c0 .012.007.02.017.024l.015-.002.201-.093.01-.008.004-.011.017-.43-.003-.012-.01-.01z'/><path fill='#4A4A4AFF' d='m12 14.122 5.303 5.303a1.5 1.5 0 0 0 2.122-2.122L14.12 12l5.304-5.303a1.5 1.5 0 1 0-2.122-2.121L12 9.879 6.697 4.576a1.5 1.5 0 1 0-2.122 2.12L9.88 12l-5.304 5.304a1.5 1.5 0 1 0 2.122 2.12z'/></g></svg>
+                </div>
+                <h3>Agende seu horário abaixo e aguarde a confirmação pelo Whatsapp:</h3>
+                <form id="isa-agendamento" onsubmit="enviar(event)">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="isa-nome" placeholder="Seu nome" required><br><br>
+                    <label for="data">Data:</label>
+                    <input type="date" id="isa-data" required><br><br>
+                    <label for="hora">Hora:</label>
+                    <input type="time" id="isa-hora" required><br><br>
+                    <button type="submit">Enviar</button>
+                </form>
+                <h4>Horário de funcionamento:<br> Seg, Qua, Qui e Sáb (09h-20h). Fechado: Ter e Dom.</h4>
+            </div>
+            <div class="isa-img isa-on">
+                <img src="img/img-home.png">
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section id="fred-sobre">
+        <div class="fred-content fred-flex">
+            <div id="fred-divimagens" >
+                <div>
+                    <img src="img/img6.jpg" alt="" class="fred-imagemvertical">
+                    <img src="img/img3.jpg" alt="" class="fred-imagemvertical">
+                </div>
+                <div class=>
+                    <img src="img/img1.jpg" alt="" class="fred-imagemhorizontal">
+                </div>
+            </div>
+            <div class="fred-text">
+                <h1>SOBRE NÓS</h1>
+                <p> A barbearia Villas Barber é um estabelecimento especializado em serviços de beleza masculina. Fundada por Junior Lopes no ano de 2019, a barbearia está comprometida em oferecer um atendimento de alta qualidade. Atualmente, conta com dois profissionais altamente qualificados que oferecem uma variedade de serviços, incluindo corte de cabelo, barba, penteado blindado, sobrancelha, limpeza de pele etc.
+                </p>
+                <button onclick="abrirForm()">Agende seu horário</button>
+            </div>
+            <div class="isa-form isa-off">
+                <div class="isa-exit" onclick="fecharForm()">
+                    <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24'  viewBox='0 0 24 24'><title>Voltar</title><g id="close_fill" fill='none' fill-rule='evenodd'><path d='M24 0v24H0V0zM12.593 23.258l-.011.002-.071.035-.02.004-.014-.004-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01-.017.428.005.02.01.013.104.074.015.004.012-.004.104-.074.012-.016.004-.017-.017-.427c-.002-.01-.009-.017-.017-.018m.265-.113-.013.002-.185.093-.01.01-.003.011.018.43.005.012.008.007.201.093c.012.004.023 0 .029-.008l.004-.014-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006l-.006.014-.034.614c0 .012.007.02.017.024l.015-.002.201-.093.01-.008.004-.011.017-.43-.003-.012-.01-.01z'/><path fill='#4A4A4AFF' d='m12 14.122 5.303 5.303a1.5 1.5 0 0 0 2.122-2.122L14.12 12l5.304-5.303a1.5 1.5 0 1 0-2.122-2.121L12 9.879 6.697 4.576a1.5 1.5 0 1 0-2.122 2.12L9.88 12l-5.304 5.304a1.5 1.5 0 1 0 2.122 2.12z'/></g></svg>
+                </div>
+                <h3>Agende seu horário abaixo e aguarde a confirmação pelo Whatsapp:</h3>
+                <form id="isa-agendamento" onsubmit="enviar(event)">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="isa-nome" placeholder="Seu nome" required><br><br>
+                    <label for="data">Data:</label>
+                    <input type="date" id="isa-data" required><br><br>
+                    <label for="hora">Hora:</label>
+                    <input type="time" id="isa-hora" required><br><br>
+                    <button type="submit">Enviar</button>
+                </form>
+                <hr>
+                <h4>Horário de funcionamento:<br> Seg, Qua, Qui e Sáb (09h-20h). Fechado: Ter e Dom.</h4>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="pedro-equipe">
+        <div class="pedro-content">
+            <h2>EQUIPE</h2>
+            <p class="pedro-p">Deixe nossos mestres barbeiros cuidarem do seu cabelo, barba e bigode. Com atenção aos detalhes e habilidade afiada, cada corte de cabelo é personalizado para realçar sua aparência única. Venha e saia daqui parecendo um verdadeiro cavalheiro!</p>
+            <div class="team-members">
+                <div class="team-member">
+                    <img src="img/equipe1.jpg" alt="Foto de Rodrigo Santos">
+                    <h3>DAVI LOPES</h3>
+                    <p>
+                        Me chamo davi machado tenho 18 anos e trabalho como barbeiro desde os 16 anos, estou sempre em busca de evolução e aperfeiçoamento diante do meu serviço.
+                    </p>
+                </div>
+                <div class="team-members">
+                    <div class="team-member">
+                        <img src="img/equipe2.jpg" alt="Foto de Rodrigo Santos">
+                        <h3>JUNIOR LOPES</h3>
+                        <p>
+                            Me chamo junior lopes o fundador da Villas Barber. Eu comecei nessa carreira faz 5 anos, atualmente tenho 30 anos e estou sempre em busca de melhorias na minha profissão.
+                        </p>
+                    </div>
+                </div>
+    </section>
+
+
+
+    <section id="bruno-servicos">
+        <div class="bruno-content">
+            <div class="bruno-container">
+                <div class="service-list">
+                    <div class="bruno-h2">
+                        <h2>SERVIÇOS</h2>
+                    </div>
+                    <div class="service">
+                        <div class="service-content">
+                            <img src="img/c15.jpg" alt="Corte de Cabelo" class="service-image">
+                            <div class="service-text">
+                                <h3>Corte de Cabelo</h3>
+                                <p>Transforme seu visual com um corte moderno e estilizado, ideal para destacar o seu estilo e personalidade.</p>
+                                <span class="service-price">R$ 25,00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <div class="service-content">
+                            <img src="img/c18.jpg" alt="Aparar a Barba" class="service-image">
+                            <div class="service-text">
+                                <h3>Aparar a Barba</h3>
+                                <p>Deixe sua barba bem cuidada e alinhada com o nosso serviço de aparar a barba.</p>
+                                <span class="service-price">R$ 20,00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <div class="service-content">
+                            <img src="img/c6.jpg" alt="Design de Sobrancelhas" class="service-image">
+                            <div class="service-text">
+                                <h3>Design de Sobrancelhas</h3>
+                                <p>Realce seu olhar com o design de sobrancelhas.</p>
+                                <span class="service-price">R$ 40,00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <div class="service-content">
+                            <img src="img/c9.jpg" alt="Hidratação Capilar" class="service-image">
+                            <div class="service-text">
+                                <h3>Hidratação Capilar</h3>
+                                <p>Recupere a saúde do seu cabelo com nossa hidratação capilar.</p>
+                                <span class="service-price">R$ 60,00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section id="yuri-galeria">
+        <div id="yuri-content">
+            <div class="txt-2">
+                <h1><span class="galeria-span">GALERIA</span></h1>
+                <p> Não se conforme com uma barbearia comum. Venha para a nossa e experimente uma mudança de nível. É hora de se sentir confiante e pronto para a próxima aventura. Não perca tempo, agende já sua visita! <span class="hashtag">#BarbeariaDeHomemParaHomem #GroomingElevado #ConfiançaDeCavalheiro</span> 
+                </p>
+            </div>
+            <div class="box-slider">
+                <button id="prev-button"><img src="img/seta_left.png " alt=""></button>
+                <div class="box-images">
+                    <img src="img/c5.jpg" class="slider on">
+                    <img src="img/c3.jpg" class="slider">
+                    <img src="img/c4.jpg" class="slider">
+
+                    <img src="img/c6.jpg" class="slider">
+                    <img src="img/c7.jpg" class="slider">
+                    <img src="img/c8.jpg" class="slider">
+                    <img src="img/c9.jpg" class="slider">
+                    <img src="img/c10.jpg" class="slider">
+                    <img src="img/c11.jpg" class="slider">
+                    <img src="img/c12.jpg" class="slider">
+                    <img src="img/c14.jpg" class="slider">
+                    <img src="img/c15.jpg" class="slider">
+                    <img src="img/c16.jpg" class="slider">
+                    <img src="img/c17.jpg" class="slider">
+                    <img src="img/c18.jpg" class="slider">
+                </div>
+                <button id="next-button"><img src="img/seta_right.png"></button>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <footer id="gabriel-footer">
+        <div class="gabriel-content">
+            <div class="gabriel-logo">
+                <img src="img/logotipo.png" alt="Vilas Barber">
+            </div>
+            <div class="gabriel-icons">
+                <a href="https://www.instagram.com/villasbarberr?igsh=MTA3dGJtbDJjdGlycw==" target="_blank"><img src="img/gabriel-logo.png" alt="Instagram" /></a>
+                <a href="https://wa.me/555185374108" target="_blank"><img src="img/gabriel-logo2.png" alt="WhatsApp" /></a>
+            </div>
+        </div>
+        <hr />
+        <div class="gabriel-info">
+            <p>Localização - Rua Dona Neila, 32 - 6931</p>
+            <p>Horário de funcionamento -  Seg, Qua, Qui e Sáb (09h-20h). Fechado: Ter e Dom.</p>
+        </div>
+    </footer>
+    <button class="gabriel-voltar-topo" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <script src="script.js"></script>
+</body>
+</html>
